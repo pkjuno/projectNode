@@ -1,0 +1,14 @@
+{
+  "name": "projectheritage",
+  "version": "1.0.0",
+  "description": "projectHeritage by zino",
+  "main": "index.js",
+  "scripts": {
+    "test": "test command"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
