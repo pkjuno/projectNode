@@ -1,0 +1,325 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+        <title>Hello, world!</title>
+      </head>
+    <body>
+<!-- ====== Navbar Section Start -->
+<header x-data="
+        {
+          navbarOpen: false
+        }
+      " class="flex w-full items-center bg-white" data-id="2c0a3204-ab75-450e-9">
+  <div class="container mx-auto" data-id="2bed72ce-d95d-418a-a">
+    <div class="relative -mx-4 flex items-center justify-between" data-id="1beca5cc-dde5-4301-a">
+      <div class="w-60 max-w-full px-4" data-id="468185e5-b374-4a99-a">
+        <a href="javascript:void(0)" class="block w-full py-5" content-id="a963becc-e244-439c-a" data-id="545e4f7e-1035-480e-a">
+          <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo" class="w-full" content-id="bbbb5f16-1710-45d8-a" data-id="298f51df-2f1a-4fe6-9">
+        </a>
+      </div>
+      <div class="flex w-full items-center justify-between px-4" data-id="22acd12b-ffc6-4369-b">
+        <div data-id="0dec0d73-b98e-4de5-9">
+          <button @click="navbarOpen = !navbarOpen" :class="navbarOpen &amp;&amp; 'navbarTogglerActive' " id="navbarToggler" class="ring-primary absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden" data-id="91ade50b-9686-41eb-9">
+            <span class="bg-body-color relative my-[6px] block h-[2px] w-[30px]" content-id="0fdec972-e412-4f63-b" data-id="09375a9a-e0e1-4b28-a"></span>
+            <span class="bg-body-color relative my-[6px] block h-[2px] w-[30px]" content-id="a2d09e9b-5971-4cea-b" data-id="de3028a5-f7d6-4b1c-a"></span>
+            <span class="bg-body-color relative my-[6px] block h-[2px] w-[30px]" content-id="52dd69b2-8437-48d9-b" data-id="8f636694-421a-42f3-9"></span>
+          </button>
+          <nav :class="!navbarOpen &amp;&amp; 'hidden' " id="navbarCollapse" class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none" data-id="3f65b5b9-b225-4eca-9">
+            <ul class="block lg:flex" data-id="311c02e6-5798-4410-b">
+              <li data-id="42d8bc0d-2480-44b8-a">
+                <a href="javascript:void(0)" class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex" content-id="c7443846-2784-4cde-b" data-id="230a15ce-d29b-4ac1-8">
+                  Home
+                </a>
+              </li>
+              <li data-id="017ade62-a618-4e31-9">
+                <a href="javascript:void(0)" class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex" content-id="d0e802d9-ff25-4dd8-a" data-id="601fb61d-6a31-4afd-b">
+                  Payment
+                </a>
+              </li>
+              <li data-id="1b87706f-49dc-4570-9">
+                <a href="javascript:void(0)" class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex" content-id="6791a1f8-602f-46cf-b" data-id="f8d5a6cc-ff5a-4884-9">
+                  Features
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hidden justify-end pr-16 sm:flex lg:pr-0" data-id="2a0bdd88-7cf1-47c3-b">
+          <a href="javascript:void(0)" class="text-dark hover:text-primary py-3 px-7 text-base font-medium" content-id="7f1ad848-adfc-4437-b" data-id="281b7745-db1f-438d-a">
+            Login
+          </a>
+          <a href="javascript:void(0)" class="bg-primary rounded-lg py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" content-id="7ebc8b26-2090-4492-b" data-id="7f7e20ce-4611-46ec-a">
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ====== Navbar Section End -->
+
+<!-- ====== Blog Section Start -->
+<section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 selected selected" data-id="b5a9106e-f95d-4eff-a">
+    <div class="container mx-auto" data-id="832d5c3e-b4bb-43a2-8">
+      <div class="-mx-4 flex flex-wrap justify-center" data-id="a48410de-4173-4181-b">
+        <div class="w-full px-4" data-id="e5905a19-a085-43f7-a">
+          <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20" data-id="a2df0144-b241-45d8-a">
+            <span class="text-primary mb-2 block text-lg font-semibold" content-id="15c8949d-666a-4b33-8" data-id="7ccc49f7-977e-4876-8">
+              Our Blogs
+            </span>
+            <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]" content-id="e31f85de-6037-4c02-8" data-id="4a018a38-58c4-4f0d-b">
+              Our Recent News
+            </h2>
+            <p class="text-body-color text-base" content-id="d4f38a0b-0bed-45a7-b" data-id="3bebbfa4-b6f9-4f2e-b">
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered alteration in some form.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-4 flex flex-wrap" data-id="6545285e-7dc4-435c-9">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-id="63aac61c-6b2f-4e18-b">
+          <div class="mx-auto mb-10 max-w-[370px]" data-id="8b60d3a1-4af1-45b6-a">
+            <div class="mb-8 overflow-hidden rounded" data-id="6b81ae93-9580-4ec2-9">
+              <img src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-01.jpg" alt="image" class="w-full" content-id="e7ae05bc-0756-4138-8" data-id="2502f5ce-e1aa-487a-a">
+            </div>
+            <div data-id="606dd136-da02-4980-8">
+              <span class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white" content-id="0ea710df-b4f0-4bff-8" data-id="16ad7793-6c7f-4251-9">
+                Dec 22, 2023
+              </span>
+              <h3 content-id="85430154-25f3-4670-8" data-id="6a92f709-4bb9-445f-a">
+                <a href="javascript:void(0)" class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl" content-id="234ec8b5-56f7-44f7-a" data-id="d7af2ca2-f119-4d77-a">
+                  Meet AutoManage, the best AI management tools
+                </a>
+              </h3>
+              <p class="text-body-color text-base" content-id="d17169ba-1f2f-447f-9" data-id="4c58d411-93bf-4f16-8">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-id="059c6e0c-f700-4987-9">
+          <div class="mx-auto mb-10 max-w-[370px]" data-id="aacd8dd0-718b-4a19-9">
+            <div class="mb-8 overflow-hidden rounded" data-id="128b9e7d-3269-4c3c-b">
+              <img src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-02.jpg" alt="image" class="w-full" content-id="c34632a5-e681-4291-8" data-id="9ebab957-9e42-4be2-8">
+            </div>
+            <div data-id="29df77ca-fa29-4b71-9">
+              <span class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white" content-id="7a273c6c-c5ed-43df-a" data-id="1e9a3cff-d413-4d4b-a">
+                Mar 15, 2023
+              </span>
+              <h3 content-id="cb230b6a-41d1-4002-9" data-id="e53a9cc0-4c16-46dc-9">
+                <a href="javascript:void(0)" class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl" content-id="4cc0f940-e75d-4bed-b" data-id="e76ccc22-f05b-4886-b">
+                  How to earn more money as a wellness coach
+                </a>
+              </h3>
+              <p class="text-body-color text-base" content-id="0e35ede7-21be-4c05-8" data-id="17610c6a-1f74-44ac-9">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3" data-id="7dca6c7d-13fe-407c-8">
+          <div class="mx-auto mb-10 max-w-[370px]" data-id="4ccd8775-6733-48e1-b">
+            <div class="mb-8 overflow-hidden rounded" data-id="bdd6cdc9-0714-4019-8">
+              <img src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-03.jpg" alt="image" class="w-full" content-id="5f76fb18-8bff-4931-b" data-id="c321f10d-d8b5-4bed-a">
+            </div>
+            <div data-id="e12cac97-5110-46ce-b">
+              <span class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white" content-id="e82e7168-65cb-4db0-a" data-id="a5d318cb-1df0-42fc-b">
+                Jan 05, 2023
+              </span>
+              <h3 content-id="1ea22383-c1b6-423f-a" data-id="06610be0-2d9a-4479-9">
+                <a href="javascript:void(0)" class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl" content-id="c4995082-80a7-47ee-b" data-id="5523640c-97b3-42bb-8">
+                  The no-fuss guide to upselling and cross selling
+                </a>
+              </h3>
+              <p class="text-body-color text-base" content-id="532df419-f95f-4eaa-8" data-id="c533a09b-32aa-49b0-8">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Blog Section End -->
+  
+  <!-- ====== Footer Section Start -->
+<footer class="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20 selected" data-id="f24b3377-0215-4df4-8">
+    <div class="container mx-auto" data-id="0a8d7755-365f-480d-a">
+      <div class="-mx-4 flex flex-wrap" data-id="658073d5-5782-4ecb-8">
+        <div class="w-full px-4 sm:w-2/3 lg:w-3/12" data-id="c67eb71a-03ff-4069-a">
+          <div class="mb-10 w-full" data-id="6e8b3088-20b9-4497-a">
+            <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]" content-id="475a2615-52ac-45e6-9" data-id="b03e1dd0-e39a-4e64-8">
+              <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo" class="max-w-full" content-id="568d852e-dd58-49a5-8" data-id="8c900416-4d56-4aa6-b">
+            </a>
+            <p class="text-body-color mb-7 text-base" content-id="e6ce358d-90a3-4fdd-b" data-id="caa0ba37-4225-496b-a">
+              Sed ut perspiciatis undmnis is iste natus error sit amet voluptatem
+              totam rem aperiam.
+            </p>
+            <p class="text-dark flex items-center text-sm font-medium" content-id="d2545cd8-c5aa-4223-b" data-id="ec11b42a-c6e7-4dd1-b">
+              <span class="text-primary mr-3" content-id="6175ccbe-9d09-414a-b" data-id="50b21e45-9de1-484c-9">
+                <svg width="19" height="21" viewBox="0 0 19 21" class="fill-current" data-id="52d15dd6-a484-4003-8">
+                  <path d="M17.8076 11.8129C17.741 11.0475 17.1088 10.5151 16.3434 10.5151H2.16795C1.40261 10.5151 0.803643 11.0808 0.703816 11.8129L0.00502514 18.8008C-0.0282506 19.2001 0.104853 19.6327 0.371059 19.9322C0.637265 20.2317 1.03657 20.398 1.46916 20.398H17.0755C17.4748 20.398 17.8741 20.2317 18.1736 19.9322C18.4398 19.6327 18.5729 19.2334 18.5396 18.8008L17.8076 11.8129ZM17.2751 19.1668C17.2419 19.2001 17.1753 19.2667 17.0422 19.2667H1.46916C1.36933 19.2667 1.2695 19.2001 1.23623 19.1668C1.20295 19.1336 1.1364 19.067 1.16968 18.9339L1.86847 11.9127C1.86847 11.7463 2.00157 11.6465 2.16795 11.6465H16.3767C16.5431 11.6465 16.6429 11.7463 16.6762 11.9127L17.375 18.9339C17.3417 19.0337 17.3084 19.1336 17.2751 19.1668Z" content-id="6f9d3f0b-dd6a-4d0e-b" data-id="d1faeaa8-34d7-4b0d-a"></path>
+                  <path d="M9.25704 13.1106C7.95928 13.1106 6.92773 14.1422 6.92773 15.4399C6.92773 16.7377 7.95928 17.7693 9.25704 17.7693C10.5548 17.7693 11.5863 16.7377 11.5863 15.4399C11.5863 14.1422 10.5548 13.1106 9.25704 13.1106ZM9.25704 16.6046C8.6248 16.6046 8.09239 16.0722 8.09239 15.4399C8.09239 14.8077 8.6248 14.2753 9.25704 14.2753C9.88928 14.2753 10.4217 14.8077 10.4217 15.4399C10.4217 16.0722 9.88928 16.6046 9.25704 16.6046Z" content-id="0c7ebe68-93aa-44e1-a" data-id="4e9aed16-13cd-4ca9-9"></path>
+                  <path d="M0.802807 6.05619C0.869358 7.52032 2.16711 8.11928 2.83263 8.11928H5.16193C5.19521 8.11928 5.19521 8.11928 5.19521 8.11928C6.19348 8.05273 7.19175 7.38722 7.19175 6.05619V5.25757C8.28985 5.25757 10.8188 5.25757 11.9169 5.25757V6.05619C11.9169 7.38722 12.9152 8.05273 13.9135 8.11928H13.9467H16.2428C16.9083 8.11928 18.206 7.52032 18.2726 6.05619C18.2726 5.95636 18.2726 5.59033 18.2726 5.25757C18.2726 4.99136 18.2726 4.75843 18.2726 4.72516C18.2726 4.69188 18.2726 4.6586 18.2726 4.6586C18.1727 3.72688 17.84 2.96154 17.2743 2.36258L17.241 2.3293C16.4091 1.56396 15.4109 1.13138 14.6455 0.865169C12.416 0 9.62088 0 9.48778 0C7.52451 0.0332757 6.26003 0.199654 4.36331 0.865169C3.63125 1.0981 2.63297 1.53068 1.80108 2.29603L1.7678 2.3293C1.20212 2.92827 0.869359 3.69361 0.769531 4.62533C0.769531 4.6586 0.769531 4.69188 0.769531 4.69188C0.769531 4.75843 0.769531 4.95809 0.769531 5.22429C0.802807 5.52377 0.802807 5.92308 0.802807 6.05619ZM2.5997 3.12792C3.26521 2.52896 4.09711 2.16292 4.7959 1.89672C6.52624 1.26448 7.65761 1.13138 9.55433 1.0981C9.68743 1.0981 12.2829 1.13138 14.2795 1.89672C14.9783 2.16292 15.8102 2.49568 16.4757 3.12792C16.8417 3.52723 17.0746 4.05964 17.1412 4.69188C17.1412 4.79171 17.1412 4.95809 17.1412 5.22429C17.1412 5.55705 17.1412 5.92308 17.1412 6.02291C17.1079 6.78825 16.3759 6.95463 16.276 6.95463H13.98C13.6472 6.92135 13.1148 6.78825 13.1148 6.05619V4.69188C13.1148 4.42567 12.9485 4.22602 12.7155 4.12619C12.5159 4.05964 6.69262 4.05964 6.49296 4.12619C6.26003 4.19274 6.09365 4.42567 6.09365 4.69188V6.05619C6.09365 6.78825 5.56124 6.92135 5.22848 6.95463H2.93246C2.83263 6.95463 2.10056 6.78825 2.06729 6.02291C2.06729 5.92308 2.06729 5.55705 2.06729 5.22429C2.06729 4.95809 2.06729 4.82498 2.06729 4.72516C2.00073 4.05964 2.23366 3.52723 2.5997 3.12792Z" content-id="4737657b-5aff-476b-9" data-id="f5061bc5-87ad-4fac-9"></path>
+                </svg>
+              </span>
+              <span content-id="00619cf1-4290-45f0-8" data-id="0692bb01-07ea-45bd-a">+012 (345) 678 99</span>
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-2/12" data-id="92ebad41-eed5-49c6-9">
+          <div class="mb-10 w-full" data-id="df7bebbe-2183-4e93-b">
+            <h4 class="text-dark mb-9 text-lg font-semibold" content-id="2402d3c8-04dc-4191-b" data-id="942de25f-16c9-430d-8">Resources</h4>
+            <ul data-id="e77f6285-822c-4f77-9">
+              <li data-id="69cf694b-03b0-44d5-9">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="63c850bf-5a43-44d4-b" data-id="3bf2b567-6899-40de-a">
+                  SaaS Development
+                </a>
+              </li>
+              <li data-id="2f5efc27-33b4-4bfe-9">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="549c293f-7c57-417f-b" data-id="0529d048-4512-48e4-9">
+                  Our Products
+                </a>
+              </li>
+              <li data-id="1cf7bace-15e3-4212-8">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="ac5cc3c4-99e8-4019-a" data-id="043938fe-d2d1-48a2-b">
+                  User Flow
+                </a>
+              </li>
+              <li data-id="7859327a-9d50-4e22-a">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="5772b3a1-c51e-4245-a" data-id="ae25adc8-3aca-461d-9">
+                  User Strategy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-2/12" data-id="9a8b86fc-0ad5-4323-8">
+          <div class="mb-10 w-full" data-id="6ef1aa5f-0757-4145-b">
+            <h4 class="text-dark mb-9 text-lg font-semibold" content-id="b3a7754b-5ba3-47ae-b" data-id="d0e40cbb-a10d-4eff-8">Company</h4>
+            <ul data-id="cabda83f-f80a-4d80-a">
+              <li data-id="6ca411e1-6e23-41a9-a">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="ca4773c2-11b8-4013-9" data-id="72e5d5c5-feaa-4425-a">
+                  About TailGrids
+                </a>
+              </li>
+              <li data-id="d96fb349-ba05-494f-a">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="41270c48-9382-4550-b" data-id="2412c703-1d0a-4a42-8">
+                  Contact &amp; Support
+                </a>
+              </li>
+              <li data-id="0a69bc55-8ba6-4d00-b">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="5e3edb6d-ccf1-4504-8" data-id="31404ad0-0e3b-400c-b">
+                  Success History
+                </a>
+              </li>
+              <li data-id="f16d5a9d-4552-4bed-b">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="5b21d40f-6a02-4bc5-9" data-id="fdaf5819-81cd-4cdc-8">
+                  Setting &amp; Privacy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-2/12" data-id="d729e07f-d19b-479c-b">
+          <div class="mb-10 w-full" data-id="9876845c-61a0-4e38-9">
+            <h4 class="text-dark mb-9 text-lg font-semibold" content-id="02568219-d42e-4b40-9" data-id="29d8a2f3-28c9-4b5f-b">Quick Links</h4>
+            <ul data-id="30ceb9e8-1d5f-4ea5-8">
+              <li data-id="b84aabc1-3059-45a6-a">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="6e478a3b-03a9-4197-8" data-id="2de122a8-69ac-4087-a">
+                  Premium Support
+                </a>
+              </li>
+              <li data-id="294a10f3-27b4-4ce8-b">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="83f94e28-ee36-47cb-9" data-id="f4ae36f2-0e9d-4ac7-b">
+                  Our Services
+                </a>
+              </li>
+              <li data-id="772679e4-5a58-4185-a">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="08f2d466-6495-4937-a" data-id="f7000a44-d71a-4f74-b">
+                  Know Our Team
+                </a>
+              </li>
+              <li data-id="1d18bb9c-3d57-4a6f-b">
+                <a href="javascript:void(0)" class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose" content-id="04377e31-1869-4682-b" data-id="82b09ab0-2e04-474b-9">
+                  Download App
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-3/12" data-id="d7342a4b-72b1-44c0-8">
+          <div class="mb-10 w-full" data-id="922c8262-d7f7-434e-9">
+            <h4 class="text-dark mb-9 text-lg font-semibold" content-id="58107e88-1944-470d-9" data-id="13399341-8665-4fae-8">Follow Us On</h4>
+            <div class="mb-6 flex items-center" data-id="1802218f-b267-498d-a">
+              <a href="javascript:void(0)" class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4" content-id="d822e8a9-39bb-4635-8" data-id="83b4fda8-8963-49a9-b">
+                <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current" data-id="89fe3b4e-d7ab-4c67-8">
+                  <path d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" content-id="89bfa5a1-24d5-4ae0-b" data-id="e059fd7e-20b3-472e-a"></path>
+                </svg>
+              </a>
+              <a href="javascript:void(0)" class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4" content-id="624618f8-582d-499f-b" data-id="c2c5e4a2-1fea-4b32-a">
+                <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current" data-id="20760277-ccac-4d23-9">
+                  <path d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" content-id="baa85455-3e9a-4397-b" data-id="90e67b7f-f0c4-410a-8"></path>
+                </svg>
+              </a>
+              <a href="javascript:void(0)" class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4" content-id="e2b3487d-72b7-428f-8" data-id="1b790f22-319b-487a-9">
+                <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current" data-id="bba7b553-b270-4ccc-8">
+                  <path d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" content-id="a4cc642a-46bb-43d7-b" data-id="a2c62514-968b-46f4-b"></path>
+                </svg>
+              </a>
+              <a href="javascript:void(0)" class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4" content-id="0295c591-81d0-430a-a" data-id="4b7120d8-3742-4fdc-a">
+                <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current" data-id="32f1fee6-b9e3-424c-b">
+                  <path d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" content-id="77b7fb4a-9068-4af6-b" data-id="5e6a647d-746f-43af-9"></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-body-color text-base" content-id="0f610e55-d67b-4325-8" data-id="57fa68e1-d36f-4337-8">© 2025 TailGrids</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-id="c13366e7-21e9-469a-a">
+      <span class="absolute left-0 bottom-0 z-[-1]" content-id="7bdce265-4bf4-40d4-b" data-id="e1761c52-5088-4a88-9">
+        <svg width="217" height="229" viewBox="0 0 217 229" fill="none" xmlns="http://www.w3.org/2000/svg" data-id="051adc26-67bb-4c28-8">
+          <path d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z" fill="url(#paint0_linear_1179_5)" content-id="48057ad7-e6e6-4cb4-a" data-id="9ff52279-53a4-4980-a"></path>
+          <defs data-id="519f2ecc-dcf5-4ca0-a">
+            <linearGradient id="paint0_linear_1179_5" x1="76.5" y1="281" x2="76.5" y2="1.22829e-05" gradientUnits="userSpaceOnUse" data-id="52cf9bff-637d-406f-8">
+              <stop stop-color="#3056D3" stop-opacity="0.08" content-id="b5724044-75d0-4a8e-b" data-id="6160367f-d0a1-4a44-9"></stop>
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" content-id="8915855d-2e38-4115-a" data-id="717cdb07-ccb3-4bc0-9"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="absolute top-10 right-10 z-[-1]" content-id="cc342cd8-7706-4b08-9" data-id="6e008e69-3e52-4f53-a">
+        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg" data-id="82632cf5-4b64-47bc-9">
+          <path d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z" fill="url(#paint0_linear_1179_4)" content-id="e918249c-ab9b-4ed9-9" data-id="964654ff-4ebf-415a-a"></path>
+          <defs data-id="06625098-ecfe-4395-b">
+            <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5" gradientUnits="userSpaceOnUse" data-id="92cb3f2e-362e-4dfc-b">
+              <stop stop-color="#13C296" stop-opacity="0.31" content-id="73748ba1-e17c-41ee-b" data-id="727bdbfe-c3a0-4cf7-b"></stop>
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" content-id="d06b6a06-062a-423a-9" data-id="4dfb3ffc-e599-41a4-b"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+  
+    </body>
+</html>
